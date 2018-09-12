@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+# notebook-api
+Repositório para o projeto do curso de Rails API.
