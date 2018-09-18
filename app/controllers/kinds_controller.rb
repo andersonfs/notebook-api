@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class KindsController < ApplicationController
-  before_action :set_kind, only: [:show, :update, :destroy]
+  before_action :set_kind, only: %i[show update destroy]
 
   # GET /kinds
   def index
@@ -39,13 +41,14 @@ class KindsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_kind
-      @kind = Kind.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def kind_params
-      params.require(:kind).permit(:Kind, :description)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_kind
+    @kind = Kind.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def kind_params
+    params.require(:kind).permit(:Kind, :description)
+  end
 end
