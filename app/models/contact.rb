@@ -3,7 +3,10 @@
 class Contact < ApplicationRecord
     # Para deixar um campo opcional.
     # belongs_to :kind, optional: true
+
+    # Associations
     belongs_to :kind
+    has_many :phones
 
     def birthdate_br
         I18n.l(self.birthdate) unless self.birthdate.blank?
