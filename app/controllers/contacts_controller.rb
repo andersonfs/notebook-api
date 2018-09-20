@@ -7,12 +7,12 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
 
-    render json: @contacts # , methods: :birthdate_br
+    render json: @contacts, include: [:kind, :phones, :address] # , methods: :birthdate_br
   end
 
   # GET /contacts/1
   def show
-    render json: @contact, include: [:kind, :phones]
+    render json: @contact, include: [:kind, :phones, :address]
   end
 
   # POST /contacts
@@ -22,14 +22,14 @@ class ContactsController < ApplicationController
     if @contact.save
       render json: @contact, include: [:kind, :phones], status: :created, location: @contact
     else
-      render json: @contact.errors, include: [:kind, :phones], status: :unprocessable_entity
+      render json: @contact.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /contacts/1
   def update
     if @contact.update(contact_params)
-      render json: @contact, include: [:kind, :phones]
+      render json: @contact, include: [:kind, :phones, :address]
     else
       render json: @contact.errors, status: :unprocessable_entity
     end
@@ -51,7 +51,8 @@ class ContactsController < ApplicationController
   def contact_params
     params.require(:contact).permit(
       :name, :email, :birthdate, :kind_id,
-      phones_attributes: [:id, :number, :_destroy]
+      phones_attributes: [:id, :number, :_destroy],
+      address_attributes: [:id, :street, :city]
       )
   end
 end
