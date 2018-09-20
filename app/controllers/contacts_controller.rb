@@ -7,12 +7,12 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
 
-    render json: @contacts, include: [:kind, :phones, :address] # , methods: :birthdate_br
+    render json: @contacts, include: [:kind] #, meta: { author: author }, include: [:kind, :phones, :address] , methods: :birthdate_br
   end
 
   # GET /contacts/1
   def show
-    render json: @contact, include: [:kind, :phones, :address]
+    render json: @contact, include: [:kind] #, meta: { author: author }, include: [:kind, :phones, :address]
   end
 
   # POST /contacts
@@ -54,5 +54,5 @@ class ContactsController < ApplicationController
       phones_attributes: [:id, :number, :_destroy],
       address_attributes: [:id, :street, :city]
       )
-  end
+  end  
 end
