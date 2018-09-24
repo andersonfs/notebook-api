@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d00fb7e-5a59-4f82-802d-1b1e94d6cd85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/notebook-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/notebook-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/kinds_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/kinds_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/serializers/contact_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/serializers/contact_serializer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -19,16 +20,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/notebook_api@Development__notebook_api.rcov" NAME="Development: notebook-api Coverage Results" MODIFIED="1537802626210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="notebook-api" />
+    <SUITE FILE_PATH="coverage/notebook_api@Development__notebook_api.rcov" NAME="Development: notebook-api Coverage Results" MODIFIED="1537829861316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="notebook-api" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="2096987414">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,7 +38,7 @@
           <entry key="Gemfile" value="2" />
           <entry key="md" value="1" />
           <entry key="rake" value="3" />
-          <entry key="rb" value="13" />
+          <entry key="rb" value="18" />
           <entry key="ruby-version" value="1" />
           <entry key="xml" value="1" />
           <entry key="yml" value="2" />
@@ -46,7 +48,7 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Ruby" value="18" />
+          <entry key="Ruby" value="23" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="2" />
         </counts>
@@ -55,13 +57,13 @@
         <counts>
           <entry key="Gemfile" value="5" />
           <entry key="rake" value="422" />
-          <entry key="rb" value="893" />
+          <entry key="rb" value="1073" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ruby" value="1320" />
+          <entry key="Ruby" value="1500" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -71,21 +73,30 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="161">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/serializers/contact_serializer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+        <entry file="file://$PROJECT_DIR$/app/controllers/kinds_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+            <state relative-caret-position="285">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -105,6 +116,9 @@
         <option value="$PROJECT_DIR$/lib/tasks/dev.rake" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
         <option value="$PROJECT_DIR$/app/controllers/contacts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/serializers/contact_serializer.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/kinds_controller.rb" />
       </list>
     </option>
   </component>
@@ -121,7 +135,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="-2" />
     <option name="width" value="1280" />
     <option name="height" value="1026" />
@@ -131,6 +145,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,12 +154,32 @@
               <item name="notebook-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="notebook-api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="notebook-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-api" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,31 +320,32 @@
       <workItem from="1536773733962" duration="355000" />
       <workItem from="1537303165153" duration="1245000" />
       <workItem from="1537376022321" duration="115000" />
-      <workItem from="1537802391967" duration="1912000" />
+      <workItem from="1537802391967" duration="2232000" />
+      <workItem from="1537829777883" duration="886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7921000" />
+    <option name="totallyTimeSpent" value="9127000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1280" height="1026" extended-state="7" />
+    <frame x="0" y="-2" width="1280" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28687197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2917342" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39932886" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39932886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33892617" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33816963" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -324,9 +361,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/locale.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -396,17 +430,45 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="-269">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/serializers/contact_serializer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.1/gems/actionpack-5.2.1/lib/action_controller/metal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/kinds_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
