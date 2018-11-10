@@ -38,11 +38,10 @@ gem 'foreman'
 # ActiveModel::Serializer implementation and Rails hooks
 gem 'active_model_serializers', '~> 0.10.0'
 
-# Simple, multi-client and secure token-based authentication for Rails.
-gem 'devise_token_auth'
-
 # A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard
 gem 'jwt'
+# Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
+gem 'devise_token_auth'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
