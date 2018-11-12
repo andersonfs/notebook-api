@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class Contact < ApplicationRecord
+  # Kaminari
+  paginates_per 5
+
   # Para deixar um campo opcional.
   # belongs_to :kind, optional: true
 

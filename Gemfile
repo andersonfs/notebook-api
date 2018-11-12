@@ -47,6 +47,11 @@ gem 'devise-i18n'
 # A plugin for versioning Rails based RESTful APIs.
 gem 'versionist'
 
+gem 'kaminari'
+
+# Link header pagination for Rails and Grape APIs.
+gem 'api-pagination'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

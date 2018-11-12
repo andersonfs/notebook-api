@@ -5,9 +5,9 @@ module V1
 
     # GET /contacts
     def index
-      @contacts = Contact.all
+      @contacts = Contact.all.page(params[:page])
 
-      render json: @contacts, include: [:kind, :phones, :address] #, meta: { author: author }, include: [:kind, :phones, :address] , methods: :birthdate_br
+      paginate json: @contacts, include: [:kind, :phones, :address] #, meta: { author: author }, include: [:kind, :phones, :address] , methods: :birthdate_br
     end
 
     # GET /contacts/1
