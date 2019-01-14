@@ -1,13 +1,19 @@
 # frozen_string_literal: true
 module V1
   class ContactsController < ApplicationController
+    include ErrorSerializer
+
     before_action :set_contact, only: %i[show update destroy]
 
     # GET /contacts
     def index
       @contacts = Contact.all.page(params[:page])
 
-      paginate json: @contacts, include: [:kind, :phones, :address] #, meta: { author: author }, include: [:kind, :phones, :address] , methods: :birthdate_br
+      # paginate json: @contacts, include: [:kind, :phones, :address] #, meta: { author: author }, include: [:kind, :phones, :address] , methods: :birthdate_br
+      # Cache-control --- expires_in 30.seconds, public: true
+      if stale?(etag: @contacts) 
+        render json: @contacts
+      end
     end
 
     # GET /contacts/1
@@ -22,7 +28,7 @@ module V1
       if @contact.save
         render json: @contact, include: [:kind, :phones], status: :created, location: @contact
       else
-        render json: @contact.errors, status: :unprocessable_entity
+        render json: ErrorSerializer.serialize(@contact.errors) # @contact.errors, status: :unprocessable_entity
       end
     end
 
